@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/event_image2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/scrim"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/event_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/event_image2"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/event_image2"
+        android:text="@string/event_name2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/event_image2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/event_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/event_reminder2"
+        android:layout_below="@+id/event_name2"
+        android:layout_marginTop="8dp"
+        android:text="@string/event_date2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/event_image2"
+        app:layout_constraintTop_toBottomOf="@+id/event_name2" />
+
+    <TextView
+        android:id="@+id/event_reminder2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/event_name2"
+        android:layout_below="@+id/event_date2"
+        android:layout_marginTop="8dp"
+        android:text="@string/event_reminder2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toEndOf="@+id/event_image2"
+        app:layout_constraintTop_toBottomOf="@+id/event_date2" />
+
+    <TextView
+        android:id="@+id/event_repeat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/event_reminder2"
+        android:layout_below="@+id/event_reminder2"
+        android:layout_marginTop="8dp"
+        android:text="@string/event_repeat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toEndOf="@+id/event_image2"
+        app:layout_constraintTop_toBottomOf="@+id/event_reminder2" />
+
+    <TextView
+        android:id="@+id/event_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/event_repeat2"
+        android:layout_below="@+id/event_repeat2"
+        android:layout_marginTop="8dp"
+        android:text="@string/event_description2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/event_image2"
+        app:layout_constraintTop_toBottomOf="@+id/event_repeat2" />
+</RelativeLayout>
